@@ -1,0 +1,61 @@
+//23456 
+#include<iostream>
+#include<cstdlib>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+	int sum, start, L1, L2, P1, P2, N, NN;
+
+	N = 9;
+	NN = N * (1000) + N * (100) + N * (10) + N * (1);
+	start = 1967;
+	cout << "23456 V1.0" << endl;
+	cout << endl;
+	cout << "welcome to 23456 the math game!" << endl;
+	cout << "if this is your first time please read the instructions to understand this game!" << endl;
+	cout << endl;
+	cout << "instructions:" << endl;
+	cout << "This is a mathematical turned based game where the compouter and you will take  turns ";
+	cout << "placing in 4 digit numbers,strating with the computer.";
+	cout << "the game is designed to turn the sum of the five 4 digit numbers (3 from ai and 2 from you)";
+	cout << "to always be 23456" << endl;
+	cout << endl;
+	cout << "warning:number must be integer" << endl;
+	cout << endl;
+	cout << endl;
+
+
+	cout << "prediction=21965" << endl;
+	cout << endl;
+	cout << "COMP  :" << start << endl;
+
+	cout << "PLAYER:";
+	cin >> P1;
+	L1 = NN - P1;
+
+	cout << "COMP  :" << L1 << endl;
+
+	cout << "PLAYER:";
+	cin >> P2;
+
+	L2 = NN - P2;
+
+	cout << "COMP  :" << L2 << endl;
+
+	cout << endl;
+	sum = start + P1 + P2 + L1 + L2;
+	cout << "sum=" << sum << endl;
+
+	if (sum == 21965)
+	{
+		cout << "prediction sucessful." << endl;
+	}
+	else
+	{
+		cout << "error,please check player input or changes to coding" << endl;
+	}
+
+}
